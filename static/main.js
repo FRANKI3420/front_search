@@ -291,7 +291,9 @@ var xhr = new XMLHttpRequest(); // xhr変数を定義
 // ボタンがクリックされたときの処理を定義
 button2.addEventListener("click", function () {
     // 選択されたオプションの値を取得
-    if (selectElement.value == "no") {
+    var selectedOption = selectElement.options[selectElement.selectedIndex].text;
+
+    if (selectedOption == "未選択") {
         resultElement.textContent = "自治体が未選択です";
     } else {
         var selectedOption = selectElement.options[selectElement.selectedIndex].text;
@@ -310,7 +312,6 @@ button2.addEventListener("click", function () {
         img.alt = selectedOption + "カード"
 
         // AJAXリクエストの作成
-        // var xhr = new XMLHttpRequest();
         xhr.open("POST", '/send', true);
         xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -335,7 +336,7 @@ button2.addEventListener("click", function () {
 
 
 xhr.onreadystatechange = function () {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
+    if (xhr.readyState === XMLHttpRequest.DONE && selectElement.value != "no") {
         if (xhr.status === 200) {
             var response = JSON.parse(xhr.responseText);
             // 応答の処理

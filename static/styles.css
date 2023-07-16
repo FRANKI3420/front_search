@@ -20,18 +20,8 @@
     /* 要素間の余白（任意） */
 }
 
-
-/* ドロップダウンボタンのスタイル */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
 #prefSelect {
-    background-color: #a79d2a;
+    background-color: #e9e8dc;
     /* 背景色 */
     color: #333;
     /* テキスト色 */
@@ -39,6 +29,21 @@
     /* ボーダー */
     padding: 5px;
     /* 内側の余白 */
+    font-size: 15px !important;
+
+}
+
+#regionSelect {
+    background-color: #e9e8dc;
+    /* 背景色 */
+    color: #333;
+    /* テキスト色 */
+    border: 1px solid #ccc;
+    /* ボーダー */
+    padding: 5px;
+    /* 内側の余白 */
+    font-size: 15px !important;
+
 }
 
 button.btn-border {
@@ -61,7 +66,7 @@ button.btn-border:hover {
 
 .bordering02 {
     color: #fff;
-    font-size: 40px !important;
+    font-size: 20px !important;
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
@@ -71,6 +76,8 @@ button.btn-border:hover {
     justify-content: left;
     align-items: center;
     position: relative;
+    font-size: 20px !important;
+
 }
 
 .slash::before,
@@ -78,7 +85,7 @@ button.btn-border:hover {
     content: "";
     width: 25px;
     height: 1px;
-    background-color: #2d8f54;
+    background-color: #d9e6de;
     margin: 0px 4px 4px;
 }
 

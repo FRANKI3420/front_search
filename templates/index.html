@@ -7,11 +7,42 @@
 </head>
 
 <body>
+
+    <head>
+        <script>
+            // ランダムな整数を生成する関数
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            // 1から4までのランダムな数値を生成
+            var randomNumber = getRandomNumber(1, 6);
+            var background_path = "static/background/" + randomNumber + ".jpg"
+
+            // ページの読み込み後にスタイルを適用
+            window.onload = function () {
+                var body = document.getElementsByTagName("body")[0];
+                body.style.backgroundImage = "url(" + background_path + ")";
+            };
+
+        </script>
+        <style>
+            body {
+
+                background-size: cover;
+                /* 全画面 */
+                background-attachment: fixed;
+                /* 固定 */
+                background-position: center center;
+                /* 縦横中央 */
+            }
+        </style>
+    </head>
     <h1>
         <div class="bordering01">マンホールカード類似検索サイト</div>
     </h1>
     <h2>
-        <div class="slash">気になる自治体のカードを指定してね</div>
+        <div class="slash bordering02">気になる自治体のカードを指定してね</div>
     </h2>
 
     <select id="regionSelect">
@@ -75,13 +106,13 @@
     </p>
     <div style="line-height: 1.5cm;" class="parent">
         <button class="btn btn-border children" id="submitButton" style="width: 3cm">検索</button>
-        <div class="children" id="dataContainer">検索結果</div>
+        <div class="children bordering02" id="dataContainer">検索結果</div>
     </div>
 
     <p>
     <div class="parent">
-        <div class="children2" id="result"></div>
-        <div class="children2" id="return"></div>
+        <div class="children2 bordering02" id="result"></div>
+        <div class="children2 bordering02" id="return"></div>
     </div>
     </p>
 
