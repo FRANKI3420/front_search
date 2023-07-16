@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+
+</head>
+
+<body>
+    <h1>
+        <div class="bordering01">マンホールカード類似検索サイト</div>
+    </h1>
+    <h2>
+        <div class="slash">気になる自治体のカードを指定してね</div>
+    </h2>
+
+    <select id="regionSelect">
+        <option value="0" selected>地域を選択</option>
+        <option value="世界">世界</option>
+        <option value="北海道">北海道</option>
+        <option value="青森県">青森県</option>
+        <option value="岩手県">岩手県</option>
+        <option value="宮城県">宮城県</option>
+        <option value="秋田県">秋田県</option>
+        <option value="山形県">山形県</option>
+        <option value="福島県">福島県</option>
+        <option value="茨城県">茨城県</option>
+        <option value="栃木県">栃木県</option>
+        <option value="群馬県">群馬県</option>
+        <option value="埼玉県">埼玉県</option>
+        <option value="千葉県">千葉県</option>
+        <option value="東京都">東京都</option>
+        <option value="神奈川県">神奈川県</option>
+        <option value="新潟県">新潟県</option>
+        <option value="富山県">富山県</option>
+        <option value="石川県">石川県</option>
+        <option value="福井県">福井県</option>
+        <option value="山梨県">山梨県</option>
+        <option value="長野県">長野県</option>
+        <option value="岐阜県">岐阜県</option>
+        <option value="静岡県">静岡県</option>
+        <option value="愛知県">愛知県</option>
+        <option value="三重県">三重県</option>
+        <option value="滋賀県">滋賀県</option>
+        <option value="京都府">京都府</option>
+        <option value="大阪府">大阪府</option>
+        <option value="兵庫県">兵庫県</option>
+        <option value="奈良県">奈良県</option>
+        <option value="和歌山県">和歌山県</option>
+        <option value="鳥取県">鳥取県</option>
+        <option value="島根県">島根県</option>
+        <option value="岡山県">岡山県</option>
+        <option value="広島県">広島県</option>
+        <option value="山口県">山口県</option>
+        <option value="徳島県">徳島県</option>
+        <option value="香川県">香川県</option>
+        <option value="愛媛県">愛媛県</option>
+        <option value="高知県">高知県</option>
+        <option value="福岡県">福岡県</option>
+        <option value="佐賀県">佐賀県</option>
+        <option value="長崎県">長崎県</option>
+        <option value="熊本県">熊本県</option>
+        <option value="大分県">大分県</option>
+        <option value="宮崎県">宮崎県</option>
+        <option value="鹿児島県">鹿児島県</option>
+        <option value="沖縄県">沖縄県</option>
+    </select>
+
+    <select id="prefSelect">
+        <option value="no" selected>未選択</option>
+    </select>
+
+    <p>
+        <span>&nbsp;</span>
+    </p>
+    <div style="line-height: 1.5cm;" class="parent">
+        <button class="btn btn-border children" id="submitButton" style="width: 3cm">検索</button>
+        <div class="children" id="dataContainer">検索結果</div>
+    </div>
+
+    <p>
+    <div class="parent">
+        <div class="children2" id="result"></div>
+        <div class="children2" id="return"></div>
+    </div>
+    </p>
+
+    <p>
+    <div class="parent">
+        <img class="children2" id="image" src="" alt="" width="200" height="300">
+        <img class="children2" id="image2" src="" alt="" width="200" height="300">
+
+    </div>
+
+    <p>
+        <button id="reload">リロード</button>
+    </p>
+
+    <script src="../static/main.js"></script> <!-- 外部のJavaScriptファイルを読み込む -->
+
+</body>
+
+</html>
+
+<!-- <select id="regionSelect">
+        <option value="0">北海道</option>
+        <option value="1">東北</option>
+        <option value="2">関東</option>
+        <option value="3">中部</option>
+        <option value="4">北陸</option>
+        <option value="5">近畿</option>
+        <option value="6">中国</option>
+        <option value="7">四国</option>
+        <option value="8">九州</option>
+    </select>
+<!-  -->
+<!-- 
+<option value="01">北海道</option>
+        <option value="02">青森県</option>
+        <option value="03">岩手県</option>
+        <option value="04">宮城県</option>
+        <option value="05">秋田県</option>
+        <option value="06">山形県</option>
+        <option value="07">福島県</option>
+        <option value="08">茨城県</option>
+        <option value="09">栃木県</option>
+        <option value="10">群馬県</option>
+        <option value="11">埼玉県</option>
+        <option value="12">千葉県</option>
+        <option value="13">東京都</option>
+        <option value="14">神奈川県</option>
+        <option value="15">新潟県</option>
+        <option value="16">富山県</option>
+        <option value="17">石川県</option>
+        <option value="18">福井県</option>
+        <option value="19">山梨県</option>
+        <option value="20">長野県</option>
+        <option value="21">岐阜県</option>
+        <option value="22">静岡県</option>
+        <option value="23">愛知県</option>
+        <option value="24">三重県</option>
+        <option value="25">滋賀県</option>
+        <option value="26">京都府</option>
+        <option value="27">大阪府</option>
+        <option value="28">兵庫県</option>
+        <option value="29">奈良県</option>
+        <option value="30">和歌山県</option>
+        <option value="31">鳥取県</option>
+        <option value="32">島根県</option>
+        <option value="33">岡山県</option>
+        <option value="34">広島県</option>
+        <option value="35">山口県</option>
+        <option value="36">徳島県</option>
+        <option value="37">香川県</option>
+        <option value="38">愛媛県</option>
+        <option value="39">高知県</option>
+        <option value="40">福岡県</option>
+        <option value="41">佐賀県</option>
+        <option value="42">長崎県</option>
+        <option value="43">熊本県</option>
+        <option value="44">大分県</option>
+        <option value="45">宮崎県</option>
+        <option value="46">鹿児島県</option>
+        <option value="47">沖縄県</option> -->
+
+
+<!-- <option value="摂津市">摂津市</option>
+        <option value="東京23区D">東京23区D</option>
+        <option value="厚木市">厚木市</option>
+        <option value="太宰府市">太宰府市</option>
+        <option value="シェムリアップ市">シェムリアップ市</option>
+        <option value="みよし市">みよし市</option>
+        <option value="国分寺市">国分寺市</option>
+        <option value="棚倉町">棚倉町</option>
+        <option value="森町">森町</option>
+        <option value="つくば市">つくば市</option>
+        <option value="札幌市">札幌市</option>
+        <option value="松江市">松江市</option>
+        <option value="和木町">和木町</option>
+        <option value="浜田市">浜田市</option>
+        <option value="高槻市">高槻市</option>
+        <option value="長与町">長与町</option>
+        <option value="各務原市">各務原市</option>
+        <option value="いわき市">いわき市</option>
+        <option value="小諸市">小諸市</option>
+        <option value="湖西市">湖西市</option>
+        <option value="大阪狭山市">大阪狭山市</option>
+        <option value="瀬戸市">瀬戸市</option>
+        <option value="高山市">高山市</option>
+        <option value="飯能市">飯能市</option>
+        <option value="明和町">明和町</option>
+        <option value="広島市D">広島市D</option>
+        <option value="能登町">能登町</option>
+        <option value="八幡市">八幡市</option>
+        <option value="小田原市">小田原市</option>
+        <option value="入間市">入間市</option>
+        <option value="三木市">三木市</option>
+        <option value="深谷市">深谷市</option>
+        <option value="鹿屋市">鹿屋市</option>
+        <option value="加東市">加東市</option>
+        <option value="長岡市">長岡市</option>
+        <option value="下田市">下田市</option>
+        <option value="上田市">上田市</option>
+        <option value="向日市">向日市</option>
+        <option value="鴻巣市">鴻巣市</option>
+        <option value="知立市">知立市</option>
+        <option value="大網白里市">大網白里市</option>
+        <option value="土浦市">土浦市</option>
+        <option value="富士河口湖町">富士河口湖町</option>
+        <option value="柏原市">柏原市</option>
+        <option value="大分市">大分市</option>
+        <option value="東京23区">東京23区</option>
+        <option value="西尾市">西尾市</option>
+        <option value="東御市">東御市</option>
+        <option value="広島市">広島市</option>
+        <option value="高梁市">高梁市</option>
+        <option value="市川市">市川市</option>
+        <option value="岸和田市">岸和田市</option>
+        <option value="安城市">安城市</option>
+        <option value="神河町">神河町</option> -->

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FlaskからHTMLに文字列を再表示する例</title>
+</head>
+
+<body>
+    <form method="POST" action="/">
+        <input type="text" name="text" placeholder="文字列を入力">
+        <input type="submit" value="送信">
+    </form>
+
+    {% if text %}
+    <p>受け取った文字列: {{ returndata }}</p>
+    {% endif %}
+</body>
+
+</html>

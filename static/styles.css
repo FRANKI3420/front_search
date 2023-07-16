@@ -1,0 +1,91 @@
+#image {
+    display: none;
+}
+
+#image2 {
+    display: none;
+}
+
+.parent {
+    display: flex;
+}
+
+.children {
+    margin-right: 200px;
+    /* 要素間の余白（任意） */
+}
+
+.children2 {
+    margin-right: 50px;
+    /* 要素間の余白（任意） */
+}
+
+
+/* ドロップダウンボタンのスタイル */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#prefSelect {
+    background-color: #a79d2a;
+    /* 背景色 */
+    color: #333;
+    /* テキスト色 */
+    border: 1px solid #ccc;
+    /* ボーダー */
+    padding: 5px;
+    /* 内側の余白 */
+}
+
+button.btn-border {
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
+}
+
+button.btn-border:hover {
+    color: #fff;
+    background: #000;
+}
+
+.bordering01 {
+    text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #000;
+    font-size: 40px !important;
+    color: #fff;
+}
+
+.bordering02 {
+    color: #fff;
+    font-size: 40px !important;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+
+.slash {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+.slash::before,
+.slash::after {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: #2d8f54;
+    margin: 0px 4px 4px;
+}
+
+.slash::before {
+    transform: rotate(45deg);
+}
+
+.slash::after {
+    transform: rotate(-45deg);
+}
