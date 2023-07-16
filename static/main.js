@@ -30,6 +30,12 @@ function updateSubregions() {
     if (selectedRegion === "北海道") {
         var options = [
             { text: "札幌市" },
+            { text: "千歳市" },
+            { text: "当麻町" },
+            { text: "雄武町" },
+            { text: "足寄町" },
+            { text: "" },
+            { text: "" },
             // 北海道に属する地域を追加
         ];
     } else if (selectedRegion === "青森県") {
@@ -39,7 +45,7 @@ function updateSubregions() {
         ];
     } else if (selectedRegion === "宮城県") {
         var options = [
-            { text: "" },
+            { text: "流域下水道B" },
         ];
     } else if (selectedRegion === "秋田県") {
         var options = [
@@ -53,17 +59,23 @@ function updateSubregions() {
         var options = [
             { text: "棚倉町" },
             { text: "いわき市" },
+            { text: "三春町" },
+
+
 
         ];
     } else if (selectedRegion === "茨城県") {
         var options = [
             { text: "土浦市" },
             { text: "つくば市" },
+            { text: "常陸大宮市" },
+            { text: "大洗町" },
 
         ];
     } else if (selectedRegion === "栃木県") {
         var options = [
-            { text: "" },
+            { text: "さくら市" },
+            { text: "壬生町B" },
         ];
     } else if (selectedRegion === "群馬県") {
         var options = [
@@ -74,13 +86,23 @@ function updateSubregions() {
             { text: "飯能市" },
             { text: "鴻巣市" },
             { text: "深谷市" },
+            { text: "越谷市C" },
             { text: "入間市" },
+            { text: "入間市B" },
+            { text: "志木市" },
+            { text: "桶川市B" },
+
+
 
         ];
     } else if (selectedRegion === "千葉県") {
         var options = [
-            { text: "市川市" },
+            { text: "市川市C" },
             { text: "大網白里市" },
+            { text: "市川市B" },
+            { text: "野田市B" },
+
+
 
         ];
     } else if (selectedRegion === "東京都") {
@@ -88,6 +110,12 @@ function updateSubregions() {
             { text: "東京23区E" },
             { text: "東京23区F" },
             { text: "国分寺市B" },
+            { text: "国立市B" },
+            { text: "福生市" },
+            { text: "小笠原村" },
+
+
+
 
 
         ];
@@ -95,11 +123,19 @@ function updateSubregions() {
         var options = [
             { text: "厚木市" },
             { text: "小田原市D" },
+            { text: "川崎市C" },
+            { text: "茅ヶ崎市" },
+
+
 
         ];
     } else if (selectedRegion === "新潟県") {
         var options = [
             { text: "長岡市E" },
+            { text: "長岡市D" },
+            { text: "加茂市" },
+
+
         ];
     } else if (selectedRegion === "富山県") {
         var options = [
@@ -107,7 +143,9 @@ function updateSubregions() {
         ];
     } else if (selectedRegion === "石川県") {
         var options = [
-            { text: "能登町" },
+            { text: "能登町C" },
+            { text: "能登町B" },
+
         ];
     } else if (selectedRegion === "福井県") {
         var options = [
@@ -119,15 +157,23 @@ function updateSubregions() {
         ];
     } else if (selectedRegion === "長野県") {
         var options = [
-            { text: "上田市" },
+            { text: "上田市B" },
             { text: "小諸市B" },
             { text: "東御市" },
+            { text: "上田市" },
+            { text: "佐久市C" },
+            { text: "筑北村" },
+
+
+
 
         ];
     } else if (selectedRegion === "岐阜県") {
         var options = [
             { text: "高山市" },
             { text: "各務原市" },
+            { text: "高山市G" },
+
 
         ];
     } else if (selectedRegion === "静岡県") {
@@ -145,6 +191,8 @@ function updateSubregions() {
             { text: "瀬戸市B" },
             { text: "安城市B" },
             { text: "みよし市B" },
+            { text: "弥富市" },
+
 
         ];
     } else if (selectedRegion === "三重県") {
@@ -159,6 +207,8 @@ function updateSubregions() {
         var options = [
             { text: "八幡市" },
             { text: "向日市B" },
+            { text: "長岡京市B" },
+
 
         ];
     } else if (selectedRegion === "大阪府") {
@@ -168,12 +218,18 @@ function updateSubregions() {
             { text: "高槻市C" },
             { text: "柏原市B" },
             { text: "摂津市" },
+            { text: "千早赤阪村" },
+
         ];
     } else if (selectedRegion === "兵庫県") {
         var options = [
             { text: "加東市" },
             { text: "神河町" },
             { text: "三木市B" },
+            { text: "洲本市" },
+            { text: "伊丹市D" },
+
+
         ];
     } else if (selectedRegion === "奈良県") {
         var options = [
@@ -195,11 +251,15 @@ function updateSubregions() {
     } else if (selectedRegion === "岡山県") {
         var options = [
             { text: "高梁市" },
+            { text: "里庄町A" },
+
         ];
     } else if (selectedRegion === "広島県") {
         var options = [
             { text: "広島市D" },
             { text: "広島市C" },
+            { text: "広島市B" },
+
 
         ];
     } else if (selectedRegion === "山口県") {
@@ -224,7 +284,9 @@ function updateSubregions() {
         ];
     } else if (selectedRegion === "福岡県") {
         var options = [
+            { text: "太宰府市B" },
             { text: "太宰府市C" },
+
         ];
     } else if (selectedRegion === "佐賀県") {
         var options = [
@@ -245,19 +307,27 @@ function updateSubregions() {
         ];
     } else if (selectedRegion === "宮崎県") {
         var options = [
-            { text: "" },
+            { text: "日向市" },
         ];
     } else if (selectedRegion === "鹿児島県") {
         var options = [
             { text: "鹿屋市" },
+            { text: "南さつま市" },
+
         ];
     } else if (selectedRegion === "沖縄県") {
         var options = [
-            { text: "" },
+            { text: "宜野湾市" },
+            { text: "宜野座村" },
+
         ];
     } else if (selectedRegion === "世界") {
         var options = [
             { text: "シェムリアップ市" },
+        ];
+    } else if (selectedRegion === "全国") {
+        var options = [
+            { text: "UR都市機構" },
         ];
     }
 
